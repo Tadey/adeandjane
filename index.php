@@ -1,6 +1,6 @@
 
 <body>
-	<h1>Ade and Jane's Website</h1>
+	<h1>Ade and Jane's Wedding!</h1>
 	
 	
 </body>
