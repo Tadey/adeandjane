@@ -1,7 +1,5 @@
 <!-- Site Header -->
 <?php
-	//define('__ROOT__', dirname(dirname(__FILE__)));
-	//require_once(__ROOT__.'\adeandjane\header.php');
 	require_once('header.php');
 ?>
 
@@ -9,7 +7,6 @@
 <div class = "page_area" id = 'daysEvents'>
 	<?php
 		require_once('site_navigation.php');
-		//require_once(__ROOT__.'\adeandjane\site_navigation.php');
 	?>
 	<div class = "text_pane">
 			<img class = "text_pane_border" src = "images/text-box-4.png"
@@ -50,6 +47,5 @@
 
 <!-- Site Footer -->
 <?php
-	//require_once(__ROOT__.'\adeandjane\footer.php');
 	require_once('footer.php');
 ?>

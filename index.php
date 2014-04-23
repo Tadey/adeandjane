@@ -1,11 +1,6 @@
 <!-- Site Header -->
 <?php
-	//define('__ROOT__', dirname(dirname(__FILE__)));
-	//echo __ROOT__;
-	//require_once(__ROOT__.'\adeandjane\header.php');
 	require_once('header.php');
-	//echo "<br>";
-	//echo __ROOT__.'\adeandjane\header.php';
 ?>
 
 <!-- Page Content - Days Events -->
@@ -25,6 +20,5 @@
 
 <!-- Site Footer -->
 <?php
-	//require_once(__ROOT__.'\adeandjane\footer.php');
 	require_once('footer.php');
 ?>
