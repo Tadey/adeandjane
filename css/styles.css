@@ -1,70 +1,296 @@
 body {
+	margin: 0;
+	padding: 0;
 	width:960px;
 	height:600px;
 	margin-left:auto;
 	margin-right:auto;
 	font-family: arial;
-	background-color:rgb(255,255,255); 
-	
-	
+	background-color:rgb(255,255,255);
+
+
 	background-image: url('../images/dots.png');
 	background-attachment: fixed;
-	background-repeat: repeat;	
+	background-repeat: repeat;
+}
+#nav {
+	float:left;					/* Because list elements are floated out of normal flow, the list needs to also. Otherwise,
+								   it will not know the height of its elements */
+	width: 100%;
+	margin: 0;
+	padding: 30px 0 0 20px;
+	list-style: none;			/* Make sure no bullets appear for list elements */
+	/*background: #FFCB2D;*/
+}
+#nav li {
+	float:left;					/* Make list elements span horizontally */
+	margin: 0;
+	padding: 0;
+	font-family:  "Courier New",sans-serif,"Lucida Grande";
+	font-size: 90%
+}
+#nav a {
+	display: inline-block;		/* block rule to make entire link tab clickable */
+	float:left;					/* block-level elements force each other to be on separate lines. Use float rule to make things horizontal */
+	margin : 0 30px 0 0;				/* Space tabs several pixels apart */
+	color: rgb(60,126,126);
+	padding: 10px 4px;					/* Padding to increase size of clickable block */
+	text-decoration: none;				/* Remove hyperlink underline */
+	/* border:	1px solid rgb(100,138,138);	/* Draw border lines on top and bottom of block */
+	border-right: none;
+	border-left: none;
+	background: rgb(250,251,251);
+	width: 200px;						/* All clickable blocks to be of the same width */
+	text-align: center;
 }
 
-#page_area {
-	width:960px;
-	height:600px;
-	/*background-color:rgb(55,55,55); */
+
+#nav a:hover {					/* when user hovers over a clickable block, change it's appearance */
+	background: white;
+	color: rgb(100,138,138);
+}
+
+div#daysEvents #t-daysEvents a, div#giftList #t-giftList a, div#travel #t-travel a, div#accommodation #t-accommodation a {
+	background: rgb(240,250,242);
+	font-weight: bold;
+	color: rgb(100,138,138);
+	border:	2.5px solid rgb(226,234,234);	/* Draw border lines on top and bottom of block */
+	border-top: none;
+	border-bottom: none;
+}
+
+.page_area {					/* Show main page area as white */
+	width:100%;
+	height:100%;
+	background-color:rgb(255,255,255);
+	margin: 0px auto;
+	padding: 0;
 
 
 }
 
-img.homepage {
-	/*
-	width:460px;
-	height:516px;*/
-}
-
-img.align-centre {
-	display:block;
-	margin: 0px auto; 
-}
-
-#main_pane {
-	/*background-color:rgb(55,55,55); */
-	
-	text-align:center;
+div.main_pane {
 	float: left;
-	width:630px;
-	height:600px;
-	
-	margin:10px;	
-	margin-left:50px;
+	margin : 5px;
+	width: 565px;
+	height: 500px;
+
+
 }
 
-#navigation_pane {
+div.side_pane {
+	float: left;
+	width: 380px;
+	height: 500px;
+	/*background-color: rgb(100, 0, 0);*/
+}
+
+
+
+#side_nav {
+	position:absolute;
+	top:255px;
+
+	width: 100%;
+	margin: 0;
+	padding: 30px 0 0 0;
+	list-style: none;			/* Make sure no bullets appear for list elements */
+
+}
+
+#side_nav li {
+	margin: 0;
+	padding: 0;
+	width:380px;
+	font-family:  "Courier New",sans-serif,"Lucida Grande";
+	font-size: 90%
+}
+#side_nav a {
+	display: inline-block;		/* block rule to make entire link tab clickable */
+	margin : 0 0 25px 0;				/* Space tabs several pixels apart */
+	color: rgb(60,126,126);
+	padding: 10px 4px;					/* Padding to increase size of clickable block */
+	text-decoration: none;				/* Remove hyperlink underline */
+	/* border:	1px solid rgb(100,138,138);	/* Draw border lines on top and bottom of block */
+	border-right: none;
+	border-left: none;
+	/*background: rgb(250,251,251);*/
+	width: 380px;						/* All clickable blocks to be of the same width */
+	text-align: center;
+}
+
+#side_nav a:hover {					/* when user hovers over a clickable block, change it's appearance */
+	/*background: rgb(250,251,251);*/
+	color: rgb(0,0,0);
+}
+
+#side_nav_accom {
+	position:absolute;
+	top:200px;
+
+	width: 100%;
+	margin: 0;
+	padding: 30px 0 0 0;
+	list-style: none;			/* Make sure no bullets appear for list elements */
+
+}
+
+#side_nav_accom li {
+	margin: 0;
+	padding: 0;
+	width:380px;
+	font-family:  "Courier New",sans-serif,"Lucida Grande";
+	font-size: 90%
+}
+#side_nav_accom a {
+	display: inline-block;		/* block rule to make entire link tab clickable */
+	margin : 0 0 15px 0;				/* Space tabs several pixels apart */
+	color: rgb(60,126,126);
+	padding: 10px 4px;					/* Padding to increase size of clickable block */
+	text-decoration: none;				/* Remove hyperlink underline */
+	/* border:	1px solid rgb(100,138,138);	/* Draw border lines on top and bottom of block */
+	border-right: none;
+	border-left: none;
+	/*background: rgb(250,251,251);*/
+	width: 380px;						/* All clickable blocks to be of the same width */
+	text-align: center;
+}
+
+#side_nav_accom a:hover {					/* when user hovers over a clickable block, change it's appearance */
+	/*background: rgb(250,251,251);*/
+	color: rgb(0,0,0);
+}
+
+.enter_button {
+	position:absolute;
+
+	top:450px;
+	height:100px;
+	width: 960px;
+	margin: 0;
+	text-align: center;
+	font-family:  "Courier New",sans-serif,"Lucida Grande";
+	font-size: 90%;
+
+}
+.enter_button a {
+	display: inline-block;		/* block rule to make entire link tab clickable */
+	text-align: center;
+	text-decoration: none;				/* Remove hyperlink underline */
+	color: rgb(60,126,126);
+	padding: 30px 80px;
+}
+.enter_button a:hover {
+	color: rgb(0,0,0);
+}
+div.align-centre {
 	margin-left:auto;
 	margin-right:auto;
-	/*background-color:rgb(0,30,175); */
-	float:left;
-	width:150px;
-	margin:10px;
+
 }
 
-#main_pane_title {
-	font-size: 20pt;
+h1, h2, h3, p {
+	margin-top:0px;
+}
+
+img.large {
+	width:100%;
+	height:100%;
+}
+
+img.side_pane_border {
+	display: block;
+	margin:0px auto;
+	margin-top: 50px;
+	width:372px;
+	height:440px;
+}
+
+img.side_pane_title {
+	display: block;
+	margin:0px auto;
 	position:absolute;
-	top: 100px;
-	width: 630px;
-	
+	top:0px;
+	width:188px;
+	height:69px;
+}
+
+div.text_pane {
+	float: left;
+	margin : 5px;
+	width: 950px;
+	height: 500px;
+
+
 
 }
 
-#main_pane_content {
-	font-size: 12pt;
+
+img.text_pane_border {
+	display: block;
+	margin:0px auto;
+	margin-top: 50px;
+	width:627px;
+	height:426px;
+}
+
+img.splash_image {
+	display: block;
+	margin:0px auto;
+	margin-top: 50px;
+	width:460px;
+	height:516px;
+
+}
+.text {
 	position:absolute;
-	top: 150px;
-	width: 630px;
+	top:220px;
+	width: 400px;
+	margin: 270px;
+	margin-top: 25px;
+	text-align: center;
+	font-family:  "Courier New",sans-serif,"Lucida Grande";
+	font-size: 80%;
+	color: rgb(60,126,126);
+}
+.days_events_text {
+	position:absolute;
+	top:165px;
+	width: 500px;
+	margin: 220px;
+	margin-top: 25px;
+	text-align: center;
+	font-family:  "Courier New",sans-serif,"Lucida Grande";
+	font-size: 80%;
+	color: rgb(60,126,126);
 }
 
+.text2 {
+	position:absolute;
+	top:200px;
+
+	width: 280px;
+	margin: 50px;
+	margin-top: 25px;
+	text-align: center;
+	font-family:  "Courier New",sans-serif,"Lucida Grande";
+	font-size: 80%;
+	color: rgb(60,126,126);
+
+
+}
+
+.text_public_transport {
+	position:absolute;
+	top:150px;
+
+	width: 280px;
+	margin: 50px;
+	margin-top: 25px;
+	text-align: center;
+	font-family:  "Courier New",sans-serif,"Lucida Grande";
+	font-size: 80%;
+	color: rgb(60,126,126);
+
+
+}
