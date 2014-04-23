@@ -1,10 +1,14 @@
 <!-- Site Header -->
 <?php
 	define('__ROOT__', dirname(dirname(__FILE__)));
+	echo __ROOT__;
 	require_once(__ROOT__.'\adeandjane\header.php');
+	echo "<br>";
+	echo __ROOT__.'\adeandjane\header.php';
 ?>
 
 <!-- Page Content - Days Events -->
+
 <div class = "splash_page">
 		<div class = "splash">
 
