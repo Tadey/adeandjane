@@ -1,10 +1,10 @@
 <!-- Site Header -->
 <?php
-	define('__ROOT__', dirname(dirname(__FILE__)));
-	require_once(__ROOT__.'\adeandjane\header.php');
+	require_once('header.php');
 ?>
 
 <!-- Page Content - Days Events -->
+
 <div class = "splash_page">
 		<div class = "splash">
 
@@ -20,5 +20,5 @@
 
 <!-- Site Footer -->
 <?php
-	require_once(__ROOT__.'\adeandjane\footer.php');
+	require_once('footer.php');
 ?>

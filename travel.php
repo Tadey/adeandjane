@@ -1,13 +1,12 @@
 <!-- Site Header -->
 <?php
-	define('__ROOT__', dirname(dirname(__FILE__)));
-	require_once(__ROOT__.'\adeandjane\header.php');
+	require_once('header.php');
 ?>
 
 <!-- Page Content - Days Events -->
 <div class = "page_area" id = 'travel'>
 	<?php
-		require_once(__ROOT__.'\adeandjane\site_navigation.php');
+		require_once('site_navigation.php');
 	?>
 
 	<div class = "main_pane">
@@ -34,5 +33,5 @@
 
 <!-- Site Footer -->
 <?php
-	require_once(__ROOT__.'\adeandjane\footer.php');
+	require_once('footer.php');
 ?>
